@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>3 CẠNH TAM GIÁC</p>
+canh a <input type="number" id="A"><br>
+canh b <input type="number" id="B"><br>
+canh c <input type="number" id="C"><br>
+<button onclick="check()">kiemtra</button>
+<p id="tongBaCanh"></p>
+<script>
+    function check(){
+        let a = + document.getElementById('A').value;
+        let b = + document.getElementById('B').value;
+        let c = + document.getElementById('C').value;
+        ìf ( a*a + b*b = c*c|| b*b + a*a = c*c || c*c + a*a =b*b ){
+            document.getElementById('tongBaCanh').innerHTML = 'la ta giac vuong'
+        }  else {
+            document.getElementById('tongBaCanh').innerHTML = 'ko phai la tam giac vuong'
+        }
+    }
+</script>
+</body>
+</html>
